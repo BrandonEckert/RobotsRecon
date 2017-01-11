@@ -11,6 +11,6 @@ The only argument is to supply the URL of the website after calling robotsrecon.
 ## Usage:
 
 With a domain target:
-<pre>python ./robotsrecon.py http://domain.com</pre>
+<pre>python3 ./robotsrecon.py http://domain.com</pre>
 With an IP target:
-<pre>python ./robotsrecon.py http://127.0.0.1</pre>
+<pre>python3 ./robotsrecon.py http://127.0.0.1</pre>
