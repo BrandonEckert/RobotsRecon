@@ -32,8 +32,6 @@ import sys
 import requests
 
 # set text color class
-
-
 class bcolors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
@@ -76,6 +74,7 @@ try:
 except Exception:
     print ((bcolors.RED + "Exception: Did you forget IP/URL?" + bcolors.ENDC))
     exit()
+
 # Attempt to find robots.txt
 try:
     print ((bcolors.BLUE + "Attempting to download robots.txt..." + bcolors.ENDC))
@@ -84,6 +83,7 @@ try:
 except Exception:
     print ((bcolors.RED + "Exception: Unable to find robots.txt. Does it exist? or is the site up?" + bcolors.ENDC))
     exit()
+
 # Attempt to read robots.txt line by line
 print ((bcolors.BLUE + "Checking status of disallowed directories..." + bcolors.ENDC))
 robotsfile = tuple(open('robots.txt', 'r'))
